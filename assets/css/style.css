@@ -335,6 +335,10 @@ label {
 	}
 
 @media screen and (max-width: 768px) {
+
+	.social-section {
+		margin: 0;
+	}
 	
 }
 
