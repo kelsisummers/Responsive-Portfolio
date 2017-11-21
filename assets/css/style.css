@@ -3,11 +3,6 @@
 body {
 	background-image: url("../images/background.jpg");
 	background-repeat: repeat; 
-	width: 100%;
-}
-
-html {
-	width: 960px;
 }
 
 p {
@@ -83,12 +78,10 @@ nav {
     background-color: #ffffff;
     position: absolute;
     top: 0;
-    left: 0;
-    margin: 0 auto;
     border-top: thin solid #dddddd;
     border-bottom: solid #dddddd;
-    width: 100%;
-    z-index: 2;
+	z-index: 2;
+	width: 100vw;
 }
 
 .name {
@@ -105,8 +98,8 @@ nav {
 
 .about {
 	position: relative;
-	top: 5px;
-	left: 675px;
+	top: 41px;
+	float: right;
 	height: 18px;
 	width: 100px;
 	text-align: center;
@@ -120,8 +113,8 @@ nav {
 
 .portfolio {
 	position: relative;
-	top: 23px;
-	left: 775px;
+	top: 41px;
+	float: right;
 	height: 18px;
 	width: 100px;
 	text-align: center;
@@ -136,7 +129,7 @@ nav {
 .contact {
 	position: relative;
 	top: 41px;
-	left: 875px;
+	float: right;
 	height: 18px;
 	width: 100px;
 	text-align: center;
@@ -321,7 +314,6 @@ label {
 	.container-about {
 		width: 75%;
 		margin: auto;
-		margin-top: -75px;
 		}
 	
 	.about-section {
@@ -341,22 +333,6 @@ label {
 		margin-top: 100px;
 		width: 100%;
 	}
-
-	nav {
-		position: sticky;
-		top: 0;
-	}
-
-	.about, .portfolio, .contact {
-
-	}
-
-	html {
-		width: 100%;
-	}
-	}
-
-
 
 @media screen and (max-width: 768px) {
 	
