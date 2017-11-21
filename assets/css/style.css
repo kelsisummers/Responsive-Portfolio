@@ -3,6 +3,11 @@
 body {
 	background-image: url("../images/background.jpg");
 	background-repeat: repeat; 
+	width: 960px;
+}
+
+html {
+	width: 960px;
 }
 
 p {
@@ -97,9 +102,9 @@ nav {
 }
 
 .about {
+	float: right;
 	position: relative;
 	top: 41px;
-	float: right;
 	height: 18px;
 	width: 100px;
 	text-align: center;
@@ -112,9 +117,9 @@ nav {
 }
 
 .portfolio {
+	float: right;
 	position: relative;
 	top: 41px;
-	float: right;
 	height: 18px;
 	width: 100px;
 	text-align: center;
@@ -127,9 +132,9 @@ nav {
 }
 
 .contact {
+	float: right;
 	position: relative;
 	top: 41px;
-	float: right;
 	height: 18px;
 	width: 100px;
 	text-align: center;
@@ -143,13 +148,13 @@ nav {
 /*social links sidebar*/
 
 .social-section {
-	float: right;
+	float: left;
 	border: thin solid #dddddd;
 	text-align: center;
 	background-color: #ffffff;
 	width: 270px;
 	box-sizing: border-box;
-	margin: 125px 0px 0px 0px;
+	margin: 125px 0px 0px 15px;
 	padding: 0px 30px 10px 30px;
 }
 
@@ -168,7 +173,7 @@ footer {
     color: #dddddd; 
     font-size: 12px;   
     height: 100px;
-    width: 100%;
+    width: 100vw;
     border-top: thick solid #4aaaa5;
     margin: 0 auto;
 	position: absolute;
@@ -313,7 +318,7 @@ label {
 @media screen and (max-width: 980px) {
 	.container-about {
 		width: 75%;
-		margin: auto;
+		margin: 0 auto;
 		}
 	
 	.about-section {
@@ -331,15 +336,70 @@ label {
 		left: 0;
 		display: inline-block;
 		margin-top: 100px;
-		width: 100%;
+		width: 100vw;
 	}
 
+	.about {
+		float: right;
+		left: none;
+	}
+
+	.portfolio {
+		float: right;
+		left: none;
+	}
+
+	.contact {
+		float: right;
+		left: none;
+
+	}
 @media screen and (max-width: 768px) {
 
-	.social-section {
-		margin: 0;
+	nav {
+		width: 100vw;
 	}
-	
-}
 
-@media screen and (max-width: 640px) {	}
+	.about-section {
+		margin-top: 150px;
+		margin-left: -95px;
+		width: 94vw;
+		float: left;
+	}
+
+	.social-section {
+		margin: 40px 0 0 25px;
+		width: 94vw;
+		float: left;
+	}
+
+@media screen and (max-width: 640px) {	
+
+	nav {
+		height: 195px;
+		position: static;
+	}
+
+	.name {
+		width: 100vw;
+		margin-left: 0;
+		border-bottom: solid #dddddd;
+	}
+
+	.about, .portfolio, .contact {
+		float: right;
+		width: 33vw;
+		top: 135px;
+	}
+	.about-section {
+		width: 90vw;
+		margin-left: -90px;
+		margin-top: 40px;
+	}
+
+	.social-section {
+		width: 90vw;
+		margin-left: 30px;
+	}
+
+}
