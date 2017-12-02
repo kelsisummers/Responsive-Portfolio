@@ -1,0 +1,168 @@
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+
+    /* Navbar */
+    #masthead {
+        position: static;
+    }
+
+    #logo {
+        margin-left: 12vw;
+    }
+
+    /*Main Content  */
+    #main-container {
+        padding: 0;
+    }
+    
+    .main-section {
+        width: 40vw;
+        margin-left: 12vw;
+        padding-right: 20px;
+    }
+    
+    /* Social Section */
+    .sidebar {
+        width: 25vw;
+        margin-right: 12vw;
+    }
+    
+    nav {
+        margin-right: 12vw;
+    }
+    
+    .social {
+        width: 6vw;
+        height: auto;
+    }
+    
+    /* Portfolio */
+    .portfolio-image {
+        width: 35vw;
+        margin-left: 25px;
+    }
+    
+    .overlay {
+        width: 35vw;
+        margin-left: 8px;
+    }
+    
+    .container-img {
+        margin-right: 40px;
+    }
+        
+    /* Footer */
+    footer {
+        position: static;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        margin-top: 100px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* Navbar */
+    #logo {
+        margin-left: 8vw;
+    }
+            
+    nav {
+        margin-right: 8vw;
+    }
+    
+    /* Main Content */
+    .main-section {
+        width: 80vw;
+        margin-left: 8vw;
+    }
+       
+    /* Social Section */
+    .sidebar {
+        width: 85vw;
+        max-width: 85vw;
+        margin-left: 8vw;
+        float: left;
+    }
+    .social {
+        width: 8vw;
+        height: auto;
+        padding-right: 25px;
+    }
+    
+    /* Portfolio */
+    .portfolio-image {
+        width: 35vw;
+        float: none;
+    }
+        
+    .overlay {
+        width: 35vw;
+    }
+    
+    .images {
+        margin-left: 1vw;
+    }
+}
+        
+    
+        @media screen and (max-width: 640px) {
+            
+            .social {
+                width: 10vw;
+                height: auto;
+                padding-right: 25px;
+            }
+    
+            #logo {
+                width: 100vw;
+                margin-left: 0;
+                border-bottom: solid #dddddd;
+            }
+    
+            nav a {
+                width: 20vw;
+                padding-left: 10vw;
+                margin-top: 5vw;
+            }
+    
+            nav {
+                height: 180px;
+                margin: 0;
+                float: none;
+            }
+        
+            /* Portfolio Page */
+    
+            .portfolio-image {
+                width: 75vw;
+                margin-left: 15px;
+            }
+        
+            .overlay {
+                width: 75vw;
+                margin: -2px;
+            }
+        
+        }
+        @media screen and (min-width: 981px) {
+            
+                .overlay {
+                    /* position: absolute; */
+                    /* bottom: 0; */
+                    /* left: 0; */
+                    /* right: 0; */
+                    background-color: #4aaaa5;
+                    overflow: hidden;
+                    width: 260px;
+                    height: 0;
+                    transition: .5s ease;
+                }
+                
+                .container-img:hover .overlay {
+                    height: 25%;
+                }
+            }

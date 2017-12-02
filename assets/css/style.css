@@ -36,6 +36,15 @@ h2 {
 	font-weight: bold;
 }
 
+/*clearfix*/
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Main Content */
 .container {
 	width: 100%;
 	max-width: 960px;
@@ -43,11 +52,11 @@ h2 {
 	clear: both;
   }
 
-  #main-container {
+#main-container {
 	padding-top: 130px;
   }
 
-  .main-section {
+.main-section {
 	float: left;
 	width: 100%;
 	max-width: 650px;
@@ -58,55 +67,10 @@ h2 {
 	border: 1px solid #ddd;	
   }
 
-  .header1 {
+.header1 {
 	border-bottom: solid #dddddd;
 	padding: 20px 0px 15px 0px;
 	margin: 0px 0px 20px 0px;
-}
-/*clearfix*/
-
-.clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-/*images*/
-
-#about-image {
-	width: 250px;
-	float: left;
-	padding: 0px 25px 5px 0px;
-}
-
-#github-logo {
-	width: 48px;
-	height: 48px;
-	margin-right: 15px;
-}
-
-#github-logo:hover {
-	opacity: 0.3;
-}
-
-#linkedin-logo {
-	width: 48px;
-	height: 48px;
-	margin-right: 15px;
-
-}
-
-#linkedin-logo:hover {
-	opacity: 0.3;
-}
-
-#overflow-logo {
-	width: 48px;
-	height: 48px;
-}
-
-#overflow-logo:hover {
-	opacity: 0.3;
 }
 
 /*Navbar*/
@@ -122,7 +86,7 @@ h2 {
 	border-bottom: 2px solid #ccc;
   }
 
-  #logo {
+#logo {
 	float: left;
 	width: 250px;
 	height: 90px;
@@ -136,12 +100,12 @@ h2 {
 	background: #4aaaa5;
   }
 
-  nav {
+nav {
 	float: right;
 	margin-top: 25px;
   }
 
-  nav a {
+nav a {
 	display: inline-block;
 	padding-left: 15px;
 	margin-left: 15px;
@@ -151,7 +115,7 @@ h2 {
 	border-left: 1px solid #efefef;
   }
 
-  nav a:first-child {
+nav a:first-child {
 	border-left: 0 none;
   }
 
@@ -171,14 +135,13 @@ nav a:hover {
 	text-align: center;
   }
 
-  h3,
-  .sidebar h2 {
+h3, .sidebar h2 {
 	margin-bottom: 10px;
 	line-height: 22px;
 	border-bottom: 2px solid #eee;
   }
 
-  .social {
+.social {
 	width: 62px;
 	height: 62px;
 	margin-top: 8px;
@@ -186,7 +149,7 @@ nav a:hover {
 	margin-bottom: 10px;
   }
 
-  .social:last-child {
+.social:last-child {
 	margin-right: 0;
   }
 
@@ -195,24 +158,6 @@ nav a:hover {
 	border-bottom: thin solid #dddddd;
 	padding: 20px 0px 15px 0px;
 	margin: 0px 0px 20px 0px;
-}
-
-/*footer*/
-
-footer {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-color: #666666;	
-    text-align: center; 
-    color: #dddddd; 
-    font-size: 12px;   
-    height: 100px;
-    width: 100vw;
-    border-top: thick solid #4aaaa5;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	line-height: 100px;
-	margin-bottom: -150px;
 }
 
 /*Portfolio Hover Text*/
@@ -241,7 +186,6 @@ footer {
 	height: 25%;
 	margin-left: 33px;
 }
-
 
 .text {
 	white-space: nowrap;
@@ -294,163 +238,56 @@ label {
 	font-size: 14px;
 }
 
-/* Media Queries */
-
-@media screen and (max-width: 980px) {
-
-#masthead {
-	position: static;
+/*footer*/
+footer {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #666666;	
+    text-align: center; 
+    color: #dddddd; 
+    font-size: 12px;   
+    height: 100px;
+    width: 100vw;
+    border-top: thick solid #4aaaa5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 100px;
+	margin-bottom: -150px;
 }
 
-#main-container {
-	padding: 0;
+/*images*/
+#about-image {
+	width: 250px;
+	float: left;
+	padding: 0px 25px 5px 0px;
 }
 
-.main-section {
-	width: 40vw;
-	margin-left: 12vw;
-	padding-right: 20px;
+#github-logo {
+	width: 48px;
+	height: 48px;
+	margin-right: 15px;
 }
 
-.sidebar {
-	width: 25vw;
-	margin-right: 12vw;
+#github-logo:hover {
+	opacity: 0.3;
 }
 
-#logo {
-	margin-left: 12vw;
+#linkedin-logo {
+	width: 48px;
+	height: 48px;
+	margin-right: 15px;
+
 }
 
-nav {
-	margin-right: 12vw;
+#linkedin-logo:hover {
+	opacity: 0.3;
 }
 
-.social {
-	width: 6vw;
-	height: auto;
+#overflow-logo {
+	width: 48px;
+	height: 48px;
 }
 
-/* Portfolio */
-.portfolio-image {
-	width: 35vw;
-	margin-left: 25px;
+#overflow-logo:hover {
+	opacity: 0.3;
 }
-
-.overlay {
-	width: 35vw;
-	margin-left: 8px;
-}
-
-.container-img {
-	margin-right: 40px;
-}
-	
-		/* Footer */
-		footer {
-			position: static;
-			bottom: 0;
-			left: 0;
-			display: inline-block;
-			margin-top: 100px;
-			width: 100vw;
-		}
-	}
-	@media screen and (max-width: 768px) {
-
-		.social {
-			width: 8vw;
-			height: auto;
-			padding-right: 25px;
-		}
-
-		.main-section {
-			width: 80vw;
-			margin-left: 8vw;
-		}
-		
-		.sidebar {
-			width: 85vw;
-			max-width: 85vw;
-			margin-left: 8vw;
-			float: left;
-		}
-		
-		#logo {
-			margin-left: 8vw;
-		}
-		
-		nav {
-			margin-right: 8vw;
-		}
-
-		.portfolio-image {
-			width: 35vw;
-			float: none;
-		}
-	
-		.overlay {
-			width: 35vw;
-		}
-		.images {
-			margin-left: 1vw;
-		}
-	}
-	
-
-	@media screen and (max-width: 640px) {
-		
-		.social {
-			width: 10vw;
-			height: auto;
-			padding-right: 25px;
-		}
-
-		#logo {
-			width: 100vw;
-			margin-left: 0;
-			border-bottom: solid #dddddd;
-		}
-
-		nav a {
-			width: 20vw;
-			padding-left: 10vw;
-			margin-top: 5vw;
-		}
-
-		nav {
-			height: 180px;
-			margin: 0;
-			float: none;
-		}
-	
-		/* Portfolio Page */
-
-		.portfolio-image {
-			width: 75vw;
-			margin-left: 15px;
-		}
-	
-		.overlay {
-			width: 75vw;
-			margin: -2px;
-		}
-	
-	}
-	@media screen and (min-width: 981px) {
-		
-			.overlay {
-				/* position: absolute; */
-				/* bottom: 0; */
-				/* left: 0; */
-				/* right: 0; */
-				background-color: #4aaaa5;
-				overflow: hidden;
-				width: 260px;
-				height: 0;
-				transition: .5s ease;
-			}
-			
-			.container-img:hover .overlay {
-				height: 25%;
-			}
-		}
