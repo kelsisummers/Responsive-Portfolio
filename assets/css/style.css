@@ -90,7 +90,7 @@ nav a:first-child {
 	border-left: 0 none;
   }
 
-nav a:hover {
+nav a:hover, nav a:focus, nav a:active {
 	text-decoration: underline;
 	}
 
@@ -154,7 +154,7 @@ nav a:hover {
 	margin-right: 0;
   }
 
-.social:hover {
+.social:hover, .social:focus, .social:active {
 	opacity: 0.4;
 }
 
