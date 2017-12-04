@@ -92,7 +92,7 @@ nav a:first-child {
 
 nav a:hover {
 	text-decoration: underline;
-}
+	}
 
 /* Main Content */
 
@@ -153,6 +153,10 @@ nav a:hover {
 .social:last-child {
 	margin-right: 0;
   }
+
+.social:hover {
+	opacity: 0.4;
+}
 
 
 .header2 {
@@ -254,38 +258,9 @@ footer {
 	margin-bottom: -150px;
 }
 
-/* Images */
+/* About Image */
 #about-image {
 	width: 250px;
 	float: left;
 	padding: 0px 25px 5px 0px;
-}
-
-#github-logo {
-	width: 48px;
-	height: 48px;
-	margin-right: 15px;
-}
-
-#github-logo:hover {
-	opacity: 0.3;
-}
-
-#linkedin-logo {
-	width: 48px;
-	height: 48px;
-	margin-right: 15px;
-}
-
-#linkedin-logo:hover {
-	opacity: 0.3;
-}
-
-#overflow-logo {
-	width: 48px;
-	height: 48px;
-}
-
-#overflow-logo:hover {
-	opacity: 0.3;
 }
