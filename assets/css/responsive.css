@@ -109,60 +109,74 @@
 }
         
     
-        @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
             
-            .social {
-                width: 10vw;
-                height: auto;
-                padding-right: 25px;
-            }
+    .social {
+        width: 10vw;
+        height: auto;
+        padding-right: 25px;
+    }
     
-            #logo {
-                width: 100vw;
-                margin-left: 0;
-                border-bottom: solid #dddddd;
-            }
+    #logo {
+        width: 100vw;
+        margin-left: 0;
+        border-bottom: solid #dddddd;
+    }
     
-            nav a {
-                width: 20vw;
-                padding-left: 10vw;
-                margin-top: 5vw;
-            }
+    nav a {
+        width: 20vw;
+        padding-left: 10vw;
+        margin-top: 5vw;
+    }
     
-            nav {
-                height: 180px;
-                margin: 0;
-                float: none;
-            }
+    nav {
+        height: 180px;
+        margin: 0;
+        float: none;
+    }
         
-            /* Portfolio Page */
-    
-            .portfolio-image {
-                width: 75vw;
-                margin-left: 15px;
-            }
+    /* Portfolio Page */
+    .portfolio-image {
+        width: 75vw;
+        margin-left: 15px;
+    }
         
-            .overlay {
-                width: 75vw;
-                margin: -2px;
-            }
+    .overlay {
+        width: 75vw;
+        margin: -2px;
+    }
         
+}
+
+@media screen and (max-width: 570px) {
+    nav a {
+        width: 20vw;
+        padding-left: 8vw;
+        margin-top: 30px;
+    }
+
+    .main-section {
+        margin-left: 20px;
+    }
+
+    #about-image {
+        width: 50vw;
+        padding: 0;
+        padding-right: 20px;
+    }
+}
+        
+@media screen and (min-width: 981px) {
+            
+    .overlay {
+        background-color: #4aaaa5;
+        overflow: hidden;
+        width: 260px;
+        height: 0;
+        transition: .5s ease;
         }
-        @media screen and (min-width: 981px) {
-            
-                .overlay {
-                    /* position: absolute; */
-                    /* bottom: 0; */
-                    /* left: 0; */
-                    /* right: 0; */
-                    background-color: #4aaaa5;
-                    overflow: hidden;
-                    width: 260px;
-                    height: 0;
-                    transition: .5s ease;
-                }
                 
-                .container-img:hover .overlay {
-                    height: 25%;
-                }
-            }
+    .container-img:hover .overlay {
+        height: 25%;
+        }
+}
