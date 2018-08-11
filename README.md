@@ -1,4 +1,4 @@
-# Responsive-Portfolio
+# Responsive-Portfolio-Template
 
 GitHub Pages: https://kelsisummers.github.io/Responsive-Portfolio/
 
