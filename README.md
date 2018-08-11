@@ -1,8 +1,8 @@
 # Responsive-Portfolio
 
-Project 2: Enhance first portfolio project with a mobile-responsive layout using CSS Media Queries.
-
 GitHub Pages: https://kelsisummers.github.io/Responsive-Portfolio/
+
+A mobile-responsive portfolio site template using only HTML and CSS.
 
 Software Stack:
   - HTML
